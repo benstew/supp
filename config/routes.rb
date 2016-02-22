@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
+  root 'goals#index'
+
+  resources :categories do
+
+  end
+  resources :goals
+
   resources :ingredients
   resources :products
-  resources :categories
-  resources :goals
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
