@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :ingredients
+  resources :products
   resources :categories
   resources :goals
   # The priority is based upon order of creation: first created -> highest priority.
