@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  root 'goals#index'
+  root 'categories#index'
 
   resources :categories do
-
+    resources :goals
   end
-  resources :goals
+
 
   resources :ingredients
   resources :products
