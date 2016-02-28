@@ -38,8 +38,8 @@ div {
 }
 
 // Home Page!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.jumbotron {
-  margin: 75px;
+.app-yield {
+  padding: 30px
 }
 
 .navbar-brand {
@@ -49,6 +49,19 @@ div {
 .btn-lrg {
   color: white;
   text-decoration: none;
+}
+
+.navbar-fixed-top {
+  padding: 20px;
+}
+
+.yield-container {
+  margin: 100px
+}
+
+.new-button {
+  float: right;
+  text-decoration: none
 }
 
 #footer {

@@ -1,34 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<br>
-<br>
-
 <div class="container">
-  <p>
-    <strong>Name:</strong>
-    <%= @category.name %>
-  </p>
+  <div class="container">
+    <p>
+      <strong>Name:</strong>
+      <%= @category.name %>
+    </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @category.description %>
-  </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @category.description %>
+    </p>
+  </div>
 
-</div>
+  <div class="container">
+    <%= link_to 'Edit', edit_category_path(@category) %> |
+    <%= link_to 'Back', categories_path %>
+  </div>
 
-<div class="container">
-  <%= link_to 'Edit', edit_category_path(@category) %> |
-  <%= link_to 'Back', categories_path %>
-</div>
+  <br>
 
-<br>
-
-<div class="container">
-  <h4>Relevant Goals</h4>
-  <% @goals.each do |goal| %>
-  <ol>
-    <li>Goal Name: <%= goal.name =%></li>
-    <li>Goal Description: <%= goal.description =%></li>
-  </ol>
-  <% end %>
+  <div class="container">
+    <h4>Relevant Goals</h4>
+    <ol>
+    <% @goals.each do |goal| %>
+      <li><a href="#">Goal Name: <%= goal.name =%> (<%= goal.description =%>)</li>
+    <% end %>
+    </ol>
+  </div>
 </div>

@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
 <div class="container">
   <h2>Products</h2>
   <p>Some explanation about the products</p>
@@ -10,7 +9,7 @@
           <th>Name</th>
           <th>Description</th>
           <th>Price</th>
-          <th>Serving size</th>
+          <th>Servings</th>
           <th>Size</th>
           <th>Family</th>
           <th>Goal</th>
@@ -20,17 +19,21 @@
 
     <tbody>
       <% @products.each do |product| %>
+      <% goal =  Goal.find_by(id: product.goal_id) %>
         <tr>
-          <td><%= product.name %></td>
-          <td><%= product.description %></td>
+          <td><a href="<%=product_path(product) %>"><%= product.name %></a></td>
+          <td><a href="<%=product_path(product) %>"><%= product.description %></td>
           <td><%= product.price %></td>
           <td><%= product.serving_size %></td>
           <td><%= product.product_size %></td>
           <td><%= product.family %></td>
-          <td><%= product.goal_id %></td>
+          <td><%= goal.name %></td>
+
+          <!--
           <td><%= link_to 'Show', product %></td>
           <td><%= link_to 'Edit', edit_product_path(product) %></td>
           <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          -->
         </tr>
       <% end %>
     </tbody>
