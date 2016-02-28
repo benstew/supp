@@ -37,12 +37,28 @@ div {
   }
 }
 
-// JumboTron!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Home Page!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .jumbotron {
   margin: 75px;
 }
 
+.navbar-brand {
+  font-weight: bold;
+}
 
+.btn-lrg {
+  color: white;
+  text-decoration: none;
+}
+
+#footer {
+  background-color: #f8f8f8;
+  // position: fixed;
+  // bottom:0px;
+  width:100%;
+  border:1px solid transparent;
+  margin-top: 40px;
+}
 
 #notice {
   color: green;

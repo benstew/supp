@@ -1,39 +1,46 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<br>
+<br>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<div class="container">
+  <p>
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <strong>Serving size:</strong>
-  <%= @product.serving_size %>
-</p>
+  <p>
+    <strong>Price:</strong>
+    <%= @product.price %>
+  </p>
 
-<p>
-  <strong>Size:</strong>
-  <%= @product.size %>
-</p>
+  <p>
+    <strong>Serving size:</strong>
+    <%= @product.serving_size %>
+  </p>
 
-<p>
-  <strong>Family:</strong>
-  <%= @product.family %>
-</p>
+  <p>
+    <strong>Size:</strong>
+    <%= @product.product_size %>
+  </p>
 
-<p>
-  <strong>Goal:</strong>
-  <%= @product.goal_id %>
-</p>
+  <p>
+    <strong>Family:</strong>
+    <%= @product.family %>
+  </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  <p>
+    <strong>Goal:</strong>
+    <%= @product.goal_id %>
+  </p>
+</div>
+
+<div class="container">
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>
