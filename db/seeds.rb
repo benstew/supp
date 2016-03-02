@@ -34,3 +34,20 @@ products = Product.create([{ name: 'Whey Protein', description: 'A whey based pr
   { name: 'Fish Oil', description: 'A fish oil based supplement', price:8 , serving_size:10 , product_size:1 , family: 'Omegas', goal_id:7 },
   { name: 'Multi Vitamin', description: 'A multivitamin', price:15 , serving_size:10 , product_size:1 , family: 'Vitamin', goal_id:3 }
 ])
+
+categories = Ingredient.create([{ name: 'Whey Protein Isolate', description: 'A whey protein isolate (often whey isolate) is a dietary supplement and food ingredient created by separating components from milk.', location_made: 'Berlin, Germany', product_id: 1},
+  { name: 'Whey Protein Concentrate', description: 'Whey protein concentrate is the cheapest and most common form of whey protein, a byproduct of cheese production.', location_made: 'Boston, USA', product_id: 1},
+  { name: 'Lecithin', description: 'Lecithin is a fat that is essential in the cells of the body. It can be found in many foods, including soybeans and egg yolks.', location_made: 'Shanghai, China', product_id: 1},
+  { name: 'Sucralose', description: 'Sucralose is a non-nutritive sweetener.', location_made: 'Ottawa, Canada', product_id: 1},
+  { name: 'Cellulose Gum', description: ' Cellulose gum is essentially a thickening agent used in all kinds of food products.', location_made: 'Storrs, USA', product_id: 1},
+  { name: 'Whey Protein Isolate', description: 'A whey protein isolate (often whey isolate) is a dietary supplement and food ingredient created by separating components from milk.', location_made: 'Berlin, Germany', product_id: 2},
+  { name: 'Whey Protein Concentrate', description: 'Whey protein concentrate is the cheapest and most common form of whey protein, a byproduct of cheese production.', location_made: 'Boston, USA', product_id: 2},
+  { name: 'Lecithin', description: 'Lecithin is a fat that is essential in the cells of the body. It can be found in many foods, including soybeans and egg yolks.', location_made: 'Shanghai, China', product_id: 2},
+  { name: 'Sucralose', description: 'Sucralose is a non-nutritive sweetener.', location_made: 'Ottawa, Canada', product_id: 2},
+  { name: 'Cellulose Gum', description: ' Cellulose gum is essentially a thickening agent used in all kinds of food products.', location_made: 'Storrs, USA', product_id: 2},
+  { name: 'Whey Protein Isolate', description: 'A whey protein isolate (often whey isolate) is a dietary supplement and food ingredient created by separating components from milk.', location_made: 'Berlin, Germany', product_id: 3},
+  { name: 'Whey Protein Concentrate', description: 'Whey protein concentrate is the cheapest and most common form of whey protein, a byproduct of cheese production.', location_made: 'Boston, USA', product_id: 3},
+  { name: 'Lecithin', description: 'Lecithin is a fat that is essential in the cells of the body. It can be found in many foods, including soybeans and egg yolks.', location_made: 'Shanghai, China', product_id: 3},
+  { name: 'Sucralose', description: 'Sucralose is a non-nutritive sweetener.', location_made: 'Ottawa, Canada', product_id: 3},
+  { name: 'Cellulose Gum', description: ' Cellulose gum is essentially a thickening agent used in all kinds of food products.', location_made: 'Storrs, USA', product_id: 3}
+])
