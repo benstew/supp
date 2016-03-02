@@ -1,17 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<br>
-<br>
+<h1><%= @product.name %></h1>
 
 <div class="container">
   <div class="col-md-4">
     <%= image_tag @product.image.url(:medium) %>
   </div>
   <div class="col-md-8">
-    <p>
-      <strong>Name:</strong>
-      <%= @product.name %>
-    </p>
     <p>
       <strong>Description:</strong>
       <%= @product.description %>
@@ -41,4 +36,17 @@
       <%= link_to 'Back', products_path %>
     </p>
   </div>
+</div>
+
+<div class="container">
+  <h3>Ingredients</h3>
+
+  <ol>
+    <% @ingredients.each do |ingredient| %>
+    <li>
+      <%= ingredient.name %>, <%= ingredient.description %>, <%= ingredient.location_made %>
+    </li>
+    <% end %>
+  </ol>
+
 </div>
