@@ -17,8 +17,6 @@ FactoryGirl.define do
 end
 
 
-
-
 # Awesome Syntax w/ faker gem
 # require 'faker'
 #
