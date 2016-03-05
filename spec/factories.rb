@@ -10,8 +10,8 @@ FactoryGirl.define do
   end
 
   factory :goal do
-    name "Something"
-    description "Something else"
+    name "Lose Belly Fat"
+    description "Lose weight around core and midsection to better expose abdominal muscles"
   end
 
 end
