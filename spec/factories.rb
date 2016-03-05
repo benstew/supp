@@ -8,6 +8,12 @@ FactoryGirl.define do
     name "Lose Weight"
     description "To Lose Weight"
   end
+
+  factory :goal do
+    name "Something"
+    description "Something else"
+  end
+
 end
 
 
