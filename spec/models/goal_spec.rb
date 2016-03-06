@@ -2,13 +2,11 @@ require "rails_helper"
 
 RSpec.describe Goal, :type => :model do
 
- # Using Factory Syntax
+
  it "has a valid factory" do
    goal = create(:goal)
    expect(goal).to be_valid
  end
-
-
 
 end
 #
