@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'annotate'
 gem 'pry'
 gem 'active_model_serializers'
+gem 'money', '~> 6.7'
 
 
 # Use jquery as the JavaScript library

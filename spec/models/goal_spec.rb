@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: goals
+#
+#  id          :integer          not null, primary key
+#  name        :string
+#  description :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  category    :string
+#  category_id :integer
+#
+
 require "rails_helper"
 
 RSpec.describe Goal, :type => :model do

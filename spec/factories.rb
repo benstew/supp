@@ -14,6 +14,11 @@ FactoryGirl.define do
     description "Lose weight around core and midsection to better expose abdominal muscles"
   end
 
+  factory :product do
+    name 'Gold Standard Whey Protein'
+    description 'A Whey based protein'
+  end
+
 end
 
 
