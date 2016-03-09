@@ -19,6 +19,11 @@ FactoryGirl.define do
     description 'A Whey based protein'
   end
 
+  factory :ingredient do
+    name 'Whey Protein'
+
+  end
+
 end
 
 
