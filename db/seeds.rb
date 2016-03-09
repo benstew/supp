@@ -27,7 +27,7 @@ products = Product.create([{ name: 'Whey Protein', description: 'A whey based pr
   { name: 'Soy Protein', description: 'A soy based protein', price: 44.99, serving_size: 20, product_size: 2 , family: 'Protein', goal_id: 6 },
   { name: 'Cellucor', description: 'Lose weight faster', price: 19.99 , serving_size: 10 , product_size: 1 , family: 'Weight Loss', goal_id: 1 },
   { name: 'GNC Total Lean', description: 'An appetite control product', price: 14.99 , serving_size: 10 , product_size:2 , family: 'Appetite Control', goal_id: 1},
-  { name: 'Hydroxycut', description: 'The most hardcore weight loss supplement', price: 10 , serving_size: 3, product_size:1 , family: 'Thermogenics', goal_id: 4 },
+  { name: 'Hydroxycut', description: 'The most hardcore weight loss supplement', price: 9.99 , serving_size: 3, product_size:1 , family: 'Thermogenics', goal_id: 4 },
   { name: 'C4', description: 'A prewokrout supplement', price: 24.99 , serving_size: 12, product_size: 1 , family: 'Pre-Workout', goal_id: 6 },
   { name: 'Creator', description: 'A creatine based workout supplement', price: 19.99, serving_size:5 , product_size:3 , family: 'Creatine', goal_id:2 },
   { name: 'Gold Standard Whey', description: 'A whey based preotein', price:29.99 , serving_size:2 , product_size:2 , family: 'Protein', goal_id:6 },
