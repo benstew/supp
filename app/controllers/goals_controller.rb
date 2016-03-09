@@ -15,6 +15,7 @@ class GoalsController < ApplicationController
   # GET /goals/new
   def new
     @goal = Goal.new
+    @category = Category.find(params[:category_id])
   end
 
   # GET /goals/1/edit
@@ -28,7 +29,7 @@ class GoalsController < ApplicationController
 
     respond_to do |format|
       if @goal.save
-        format.html { redirect_to @goal, notice: 'Goal was successfully created.' }
+        format.html { redirect_to category_goal_path(@goal.category_id, @goal), notice: 'Goal was successfully created.'}
         format.json { render :show, status: :created, location: @goal }
       else
         format.html { render :new }
@@ -69,6 +70,6 @@ class GoalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def goal_params
-      params.require(:goal).permit(:title, :description)
+      params.require(:goal).permit(:title, :description, :category_id)
     end
 end
