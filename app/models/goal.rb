@@ -13,7 +13,7 @@
 
 class Goal < ActiveRecord::Base
   belongs_to :category
-  has_many :products
+  has_many :products, dependent: :destroy
 
   def self.most_recent_first
     self.all.order('created_at DESC')

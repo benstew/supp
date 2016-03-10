@@ -10,7 +10,7 @@
 #
 
 class Category < ActiveRecord::Base
-  has_many :goals
+  has_many :goals, dependent: :destroy
   validates :name, presence: true
   validates :description, presence: true
 end

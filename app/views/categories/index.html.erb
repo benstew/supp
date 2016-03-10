@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-
 <div class="container">
   <div class="container">
-    <h2>High Level Goals</h2>
+    <h2>Categories</h2>
     <p>Some Content to explain stuff</p>
     <table class="table table-striped">
       <thead>
@@ -23,8 +22,9 @@
             <td><a href="<%=category_path(category) %>"><%= category.description %></a></td>
               <!--
             <td><%= link_to 'Edit', edit_category_path(category) %></td>
-            <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             -->
+            <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
           </tr>
         <% end %>
       </tbody>
