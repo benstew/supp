@@ -1,5 +1,6 @@
 class GoalsController < ApplicationController
   before_action :set_goal, only: [:show, :edit, :update, :destroy]
+  # respond_to :js
 
   # GET /goals
   # GET /goals.json
@@ -16,6 +17,7 @@ class GoalsController < ApplicationController
   def new
     @goal = Goal.new
     @category = Category.find(params[:category_id])
+
   end
 
   # GET /goals/1/edit
@@ -31,6 +33,8 @@ class GoalsController < ApplicationController
       if @goal.save
         format.html { redirect_to category_goal_path(@goal.category_id, @goal), notice: 'Goal was successfully created.'}
         format.json { render :show, status: :created, location: @goal }
+        format.js
+
       else
         format.html { render :new }
         format.json { render json: @goal.errors, status: :unprocessable_entity }

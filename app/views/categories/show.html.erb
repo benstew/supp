@@ -18,7 +18,7 @@
   <br>
 
 <div class="container">
-  <div class="container">
+  <div class="container relevant-goals">
     <h3>Relevant Goals</h3>
     <p>Some specific goals relevant to your high level goal</p>
     <table class="table table-striped">
@@ -43,6 +43,6 @@
         </ol>
       </tbody>
     </table>
-    |<%= link_to 'New Goal', new_category_goal_path(@category) %>|
+    |<%= link_to 'New Goal', new_category_goal_path(@category), remote: true, class: "new-goal-button"%>|
   </div>
 </div>

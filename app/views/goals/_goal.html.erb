@@ -1,0 +1,12 @@
+<%= div_for goal do %>
+
+  <h3><%= goal.name %></h3>
+
+  <ul>
+   <li><%= link_to "Edit Task", new_category_goal_path, remote: true %></li>
+   <!--
+   <li><%= link_to "Mark Complete", complete_path, remote: true %></li>
+   <li><%= link_to "Delete Task", task, remote: true, method: :delete %></li>
+   -->
+  </ul>
+<% end %>

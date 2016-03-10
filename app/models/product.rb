@@ -22,7 +22,7 @@
 class Product < ActiveRecord::Base
   has_attached_file :image, styles: { large: "600x600>", medium: "300x300>", thumb: "100x100>" }, default_url: "http://cf.ltkcdn.net/vegetarian/images/std/121509-300x300-Gold_Standard_Whey_Protein.jpg"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
-  has_many :ingredients, dependent: :destory
+  has_many :ingredients, dependent: :destroy
 
   validates_presence_of :name, :description
   validates :price_in_cents, :numericality => { :greater_than_or_equal_to => 0 }, :presence => true

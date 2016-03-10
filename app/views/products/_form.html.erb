@@ -1,4 +1,4 @@
-<%= form_for(@product) do |f| %>
+<%= form_for(@product, remote: true) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -33,8 +33,8 @@
     <%= f.number_field :serving_size %>
   </div>
   <div class="field">
-    <%= f.label :size %><br>
-    <%= f.number_field :size %>
+    <%= f.label :product_size %><br>
+    <%= f.number_field :product_size %>
   </div>
   <div class="field">
     <%= f.label :family %><br>

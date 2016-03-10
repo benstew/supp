@@ -1,0 +1,3 @@
+$('form').hide();
+$('.products-table').last().append('<%= j render partial: "product", locals: {product: @product} %>');
+$('.new-product-button').show();
