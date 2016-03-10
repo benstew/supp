@@ -21,6 +21,15 @@ RSpec.describe Goal, :type => :model do
    expect(goal).to be_valid
  end
 
+it ".most_recent_first" do
+  goal1 = create(:goal)
+  goal2 = create(:goal)
+  goal3 = create(:goal)
+
+  expect(Goal.most_recent_first.to_a).to eq [goal3, goal2, goal1]
+end
+
+
 end
 #
 #   it "has a valid factory" do

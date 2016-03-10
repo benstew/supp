@@ -14,4 +14,9 @@
 class Goal < ActiveRecord::Base
   belongs_to :category
   has_many :products
+
+  def self.most_recent_first
+    self.all.order('created_at DESC')
+  end
+
 end

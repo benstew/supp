@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def home
-    @popular_goals = Goal.all
+    @recent_goals = Goal.most_recent_first
   end
 
   def help
