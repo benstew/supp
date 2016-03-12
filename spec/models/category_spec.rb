@@ -38,8 +38,5 @@ RSpec.describe Category, :type => :model do
       expect(category.description).to eq 'To Lose Weight'
     end
   end
-
-
-
-
+  
 end

@@ -38,11 +38,6 @@ RSpec.describe "UserLogins", type: :request do
     click_button "Log in"
     expect(page).to have_content("Invalid email or password")
   end
-
-
-
-
 # test@gmail.com test1234
-
 
 end
