@@ -33,14 +33,14 @@
                 <ul class="dropdown-menu">
                   <li><a href="#">The Mission</a></li>
                   <li><a href="#">Our Team</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li><a href="<%= faq_path %>">FAQ</a></li>
                 </ul>
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <% if user_signed_in? %>
                 <li>Hi <%= current_user.email %></li>
-                <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li> 
+                <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
               <% else %>
               <li><a href="<%= new_user_session_path %>">Login</a></li>
               <li><a href="<%= new_user_registration_path %>">Sign-up</a></li>

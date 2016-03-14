@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get     'help'    => 'static_pages#help', as: 'help'
   get     'about'   => 'static_pages#about', as: 'about'
   get     'contact' => 'static_pages#contact', as: 'contact'
+  get     'faq'     => 'static_pages#faq', as: 'faq'
 
   resources :categories do
     resources :goals
