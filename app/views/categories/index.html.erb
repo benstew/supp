@@ -42,7 +42,20 @@
     </table>
   </div>
 
-  <div class="container new_category_click">
-      <button type="button" class="btn btn-success btn-sm btn-custom" ><%= link_to 'New Category', new_category_path %> </button>
+  <div class="container">
+    <div class="container new_category_click">
+        <button type="button" class="btn btn-success btn-sm btn-custom" ><%= link_to 'New Category', new_category_path %> </button>
+    </div>
+    <div class="container back_category_click" style="display:none">
+        <button type="button" class="btn btn-success btn-sm btn-custom" >Back</button>
+    </div>
+
+    <div class="row">
+      <div class="new_category_form col-md-8" style="display:none">
+        <%= render 'form' %>
+      </div>
+    </div>
+
   </div>
+
 </div>
