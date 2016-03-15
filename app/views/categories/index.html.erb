@@ -19,10 +19,21 @@
           <tr>
             <td><%= category.id %></a></td>
             <td><a href="<%=category_path(category) %>"><%= category.name %></a></td>
-            <td><a href="<%=category_path(category) %>"><%= category.description %></a></td>
-              <!--
-            <td><%= link_to 'Edit', edit_category_path(category) %></td>
-            -->
+
+            <td>
+            <div class="category-description" >
+              <a href="<%=category_path(category) %>"><%= category.description %></a>
+            </div>
+            </td>
+
+
+            <td>
+            <div class="edit-category-toggle" style="display:none">
+              <%= render 'edit_description', category: category %>
+            </div>
+            </td>
+
+            <td><button type="button" class="btn btn-success btn-sm edit-category-description" ><%= link_to 'Edit Description', new_category_path %> </button></td>
             <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
           </tr>

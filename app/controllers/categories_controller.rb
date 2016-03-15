@@ -5,8 +5,6 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
     @categories = Category.all
-
-    
   end
 
   # GET /categories/1
@@ -18,13 +16,14 @@ class CategoriesController < ApplicationController
   # GET /categories/new
   def new
     @category = Category.new
-    # respond_to do |format|
-    #   format.json { render json: @category }
-    # end
+    respond_to do |format|
+      format.json { render json: @category }
+    end
   end
 
   # GET /categories/1/edit
   def edit
+    
   end
 
   # POST /categories

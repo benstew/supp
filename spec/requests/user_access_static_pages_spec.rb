@@ -8,4 +8,7 @@ RSpec.describe "User Viewing Static Pages", type: :request do
       click_link "FAQ"
       expect(page).to have_content("Welcome To The FAQs")
   end
+
+
+
 end
